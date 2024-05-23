@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: silver;
+    }
+    
+    #sidebar {
+        background-color: #333;
+        color: #fff;
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding-top: 60px;
+    }
+    
+    #sidebar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #sidebar ul li {
+        padding: 10px;
+        border-bottom: 1px solid #555;
+    }
+    
+    #sidebar ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    #sidebar ul li:hover {
+        background-color: #555;
+    }
+    
+    #topbar {
+        background-color: #444;
+        color: #fff;
+        height: 60px;
+        line-height: 60px;
+        padding: 0 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+    }
+    
+    #content {
+        margin-left: 250px;
+        margin-top: 60px;
+        padding: 20px;
+    }
+    
+    h1 {
+        margin-top: 0;
+    }
+    .table-container {
+    display: flex;
+}
+.table-container {
+    display: flex;
+}
+
+/* .table {
+    
+} */
+
+.table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.table th,.table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: greenyellow;
+}
+
+/* Additional CSS for the right side table */
+.table:last-child {
+    width: calc(30% - 20px); /* Adjusted width for the last table */
+    margin-left: 140px; /* No margin for the last table */
+}
+#topbar {
+    background-color: #444;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding: 20px 20px ; 
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    margin-left: 1000px;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #ccc;
+}
+
+</style>
+</head>
+<body>
+    
+<div id="sidebar">
+    <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Contest</a></li>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Settings</a></li>
+    </ul>
+</div>
+
+<div id="topbar">
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="content">
+    <h1 style="margin-top: 30px;">Welcome to the Coding Contests</h1>
+    <div class="table-container" style="margin-top: 20px;">
+        <table class="table" style="border-collapse:collapse;width: 50%;margin-right: 20px;">
+            <caption>Contest Scedule </caption>
+            <thead>
+                <tr>
+                    <th>Contest Name</th>
+                    <th>Contest Time</th>
+                    <th>Slot Remaining</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Junior Programmig Contest Phase 1</td>
+                    <td> 2.00 PM </td>
+                    <td>150 </td>
+                </tr>
+                <tr>
+                    <td>Senior Programmig Contest Phase 1</td>
+                    <td>2.00PM</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Junior Programmig Contest Phase 2</td>
+                    <td>9.00 PM</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Senior Programmig Contest Phase 2</td>
+                    <td>9.00 PM</td>
+                    <td>150</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        <table class="table" style="padding: 30px;">
+            <caption style="margin-top: 30px ;">Contest Registration Details</caption>
+            <thead>
+                <tr>
+                    <th>Registration Fees</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Junior Team  -  500tk 
+                    
+                    <br> Senior Team  - 1500tk
+
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div>
+    <h1 style="margin-left: 280px;margin-top: 40px;">Junior And Senior Programming Contest </h1>
+    <h3 style="margin-left: 280px;margin-top: 30px;">Announcements </h3>
+    <p style="margin-left: 280px;">Welcome to the senior and junior programming contest here.
+        you will see the contest is divided into 3 phases. of senior and junior
+        they have to participate it in team and each team can have at most 3
+        members no more than that. Every Team has to participate each phases
+        and the prizes will be announce later. 
+    </p>
+</div>
+
+
+
+
+    
+
+
+</body>
+</html>
